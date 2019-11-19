@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/ic_doctor"
+            android:title="@string/menu_principal" />
+        <item
+            android:id="@+id/nav_historial"
+            android:icon="@drawable/ic_historial"
+            android:title="@string/menu_historial" />
+        <item
+            android:id="@+id/nav_pago"
+            android:icon="@drawable/ic_creditcard"
+            android:title="@string/menu_pago" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/ic_session"
+            android:title="@string/menu_cerrar_sesion" />
+
+
+    </group>
+
+
+
+</menu>

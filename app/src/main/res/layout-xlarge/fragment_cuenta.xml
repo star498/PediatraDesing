@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/imagen11"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="María Lolorzano"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/correo"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_sms"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColorHint="@color/color_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_default"
+            android:fontFamily="sans-serif"
+            android:hint="Correo"/>
+        <EditText
+            android:id="@+id/celular"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_celular"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColorHint="@color/color_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_default"
+            android:fontFamily="sans-serif"
+            android:hint="Celular"/>
+
+        <EditText
+            android:id="@+id/key"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawableTint="@color/colorAccent"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_linea_rosado"
+            android:fontFamily="sans-serif"
+            android:hint="Modificar Contraseña"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hijos"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/imagen13"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Lucia Perez"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/imagen13"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Lorena Perez"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

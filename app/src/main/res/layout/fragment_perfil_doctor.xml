@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:paddingLeft="@dimen/_30sdp"
+      android:paddingRight="@dimen/_30sdp"
+
+      android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/imageView4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_5sdp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_corazon" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/imageView5"
+          android:layout_width="@dimen/_80sdp"
+          app:civ_border_color="@color/colorPrimaryDark"
+          app:civ_border_width="@dimen/_2sdp"
+          android:layout_height="@dimen/_80sdp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageView4"
+          android:src="@mipmap/imagen4"/>
+
+      <TextView
+          android:id="@+id/textView9"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/_20sdp"
+
+          android:fontFamily="sans-serif"
+          android:text="Juan Alvarez"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="@dimen/_14ssp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/imageView5"
+          app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+      <TextView
+          android:id="@+id/textView10"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Pediatra endocrino"
+          android:textColor="@color/lyrics"
+          android:textSize="@dimen/_12ssp"
+          android:fontFamily="sans-serif"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/textView9"
+          app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+      <TextView
+          android:id="@+id/textView11"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif"
+          android:text="340 consultas"
+          android:textColor="@color/colorAccent"
+          android:textSize="@dimen/_10ssp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/textView10"
+          app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="@+id/textView11"
+          app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_estrella"
+              />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_estrella" />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_estrella" />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_estrella_default" />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_estrella_default" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Descripción"
+          android:textSize="@dimen/_14ssp"
+          android:textColor="@color/colorPrimaryDark"
+          android:fontFamily="sans-serif"
+          android:layout_marginTop="@dimen/_10sdp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+      <TextView
+          android:id="@+id/textView13"
+          android:layout_width="0dp"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_height="wrap_content"
+          android:text="@string/descripcion_perfil_doctor"
+          android:textSize="@dimen/_12ssp"
+          android:textColor="@color/lyrics"
+          android:fontFamily="sans-serif"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/textView12"
+          app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+      <TextView
+          android:id="@+id/textView14"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Sedes de atención"
+          android:textSize="@dimen/_14ssp"
+          android:textColor="@color/colorPrimaryDark"
+          android:fontFamily="sans-serif"
+          android:layout_marginTop="@dimen/_10sdp"
+          app:layout_constraintStart_toStartOf="@+id/textView13"
+          app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout4"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="11">
+
+              <ImageView
+                  android:id="@+id/imageView6"
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_10sdp"
+                  android:src="@drawable/ic_marcador"
+                  app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="@+id/textView15"
+                  tools:ignore="MissingConstraints" />
+
+              <TextView
+                  android:id="@+id/textView15"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_5sdp"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="San Borja"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="@dimen/_12ssp"
+                  android:textStyle="bold"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toEndOf="@+id/imageView6"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+              <TextView
+                  android:id="@+id/textView16"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="Av. Aviación 2345. San Borja"
+                  android:textColor="@color/lyrics"
+                  android:textSize="@dimen/_12ssp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+              <TextView
+                  android:id="@+id/textView17"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="Lun - Mie"
+                  android:textColor="@color/colorPrimaryDark"
+                  android:textSize="@dimen/_12ssp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintStart_toStartOf="@+id/textView16"
+                  app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+              <TextView
+                  android:id="@+id/textView18"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="8:00 am - 13:00 pm"
+                  android:textColor="@color/lyrics"
+                  android:textSize="@dimen/_12ssp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toEndOf="@+id/textView17"
+                  app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+          <ImageView
+              android:layout_width="@dimen/_25sdp"
+              android:layout_height="@dimen/_25sdp"
+              android:layout_weight="1"
+              android:src="@drawable/ic_celularredondo" />
+
+
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/textView19"
+          android:layout_width="0dp"
+          android:layout_height="0.5dp"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:background="@color/grey_1"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout5"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="11">
+
+              <ImageView
+                  android:id="@+id/imageView6"
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_10sdp"
+                  android:src="@drawable/ic_marcador"
+                  app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="@+id/textView15"
+                  tools:ignore="MissingConstraints" />
+
+              <TextView
+                  android:id="@+id/textView15"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_5sdp"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="Santiago de Surco"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="@dimen/_12ssp"
+                  android:textStyle="bold"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toEndOf="@+id/imageView6"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+              <TextView
+                  android:id="@+id/textView16"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="Av. Aviación 2340. Surco"
+                  android:textColor="@color/lyrics"
+                  android:textSize="@dimen/_12ssp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+              <TextView
+                  android:id="@+id/textView17"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="Lun - Mie"
+                  android:textColor="@color/colorPrimaryDark"
+                  android:textSize="@dimen/_12ssp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintStart_toStartOf="@+id/textView16"
+                  app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+              <TextView
+                  android:id="@+id/textView18"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_5sdp"
+                  android:fontFamily="sans-serif"
+                  android:text="7:00 am - 14:00 pm"
+                  android:textColor="@color/lyrics"
+                  android:textSize="@dimen/_12ssp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toEndOf="@+id/textView17"
+                  app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+          <ImageView
+              android:layout_width="@dimen/_25sdp"
+              android:layout_height="@dimen/_25sdp"
+              android:layout_weight="1"
+              android:src="@drawable/ic_celularredondo" />
+
+
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/consultar"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_40sdp"
+          android:layout_marginTop="@dimen/_20sdp"
+          android:background="@drawable/border_default"
+          android:backgroundTint="@color/colorAccent"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:text="Consultar"
+          android:textColor="@color/white"
+          android:textSize="@dimen/_12ssp"
+          android:layout_marginBottom="@dimen/_10sdp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+      <ImageView
+          android:id="@+id/imageView7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+          app:layout_constraintEnd_toEndOf="@+id/imageView5"
+          app:srcCompat="@drawable/ic_circulo_verde" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

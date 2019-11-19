@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/_30sdp"
+    android:paddingRight="@dimen/_30sdp"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@mipmap/grupo539"/>
+
+        <EditText
+            android:id="@+id/user"
+            android:paddingLeft="@dimen/_20ssp"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_30ssp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40ssp"
+            android:background="@drawable/border_default"
+            android:fontFamily="sans-serif"
+            android:hint="DNI, CE, RUC, Pasaporte"/>
+
+        <EditText
+            android:id="@+id/key"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawablePadding="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:textSize="@dimen/_12ssp"
+            android:paddingLeft="@dimen/_20ssp"
+            android:textColorHint="@color/color_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40ssp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:background="@drawable/border_default"
+            android:fontFamily="sans-serif"
+            android:hint="Contraseña"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:text="¿Olvidaste la contraseña?"
+            android:textColor="#3B95ED"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            />
+
+        <Button
+            android:id="@+id/ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/border_default"
+            android:backgroundTint="@color/colorAccent"
+            android:text="INGRESAR"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border_default"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="INGRESAR CON FACEBOOK"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#ACACAC"
+            android:fontFamily="sans-serif"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border_default"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_gmail"
+            android:text="INGRESAR CON GMAIL"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#ACACAC"
+            android:fontFamily="sans-serif"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#3B95ED"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12ssp"
+                android:layout_height="wrap_content"
+                android:text="¿No tiene cuenta?"/>
+            <TextView
+                android:id="@+id/registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5ssp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/colorAccent"
+                android:text="Regístrate"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

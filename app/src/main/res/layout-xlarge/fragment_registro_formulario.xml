@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_linea_rosado"
+            android:fontFamily="sans-serif"
+            android:text="Omitir"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="right"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif"
+            android:layout_height="wrap_content"
+            android:text="Complete la siguiente información para brindarle un mejor servicio"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Alergias"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Peso al nacer"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Tipo de parto"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:text="Asfixia"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/lyrics"
+                android:background="@drawable/border_boton_sexo"/>
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/border_boton_sexo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Lactancia exclusiva"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/lyrics"
+                android:background="@drawable/border_boton_sexo"/>
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/border_boton_sexo"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Enfermedades"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Operaciones"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Hospitalizaciones"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_default"
+            android:hint="Enfermedades familiares"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/lyrics"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_default"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Guardar"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</ScrollView>
+

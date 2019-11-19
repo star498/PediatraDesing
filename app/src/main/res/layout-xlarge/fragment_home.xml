@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/map"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:layout_margin="50dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btnimagen"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/grupo549"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnbuscar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/border_default"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Buscar pediatra"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_margin="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

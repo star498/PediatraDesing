@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.reparapp.pediatra.main.home.HomeFragment"
+        android:label="@string/menu_principal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_historial"
+        android:name="com.reparapp.pediatra.main.historial.HistorialFragment"
+        android:label="@string/menu_historial"
+        tools:layout="@layout/fragment_historial" />
+
+    <fragment
+        android:id="@+id/nav_pago"
+        android:name="com.reparapp.pediatra.main.metodoPago.MetodoPagoFragment"
+        android:label="@string/menu_pago"
+        tools:layout="@layout/fragment_metodo_pago" />
+
+
+</navigation>

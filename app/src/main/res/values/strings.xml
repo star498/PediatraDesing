@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Pediatra</string>
+    <string name="title_activity_crear_cuenta">CrearCuentaActivity</string>
+    <string name="tab_text_1">Crear Cuenta</string>
+    <string name="tab_text_2">Añadir Tarjeta</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">B</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Menú</string>
+
+    <string name="menu_historial">Historial</string>
+    <string name="menu_principal">Buscar Pediatra</string>
+    <string name="menu_pago">Método de Pago</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesión</string>
+    <string name="text_metodo_pago">Seleccione un método de pago</string>
+    <string name="msg_cerrar_sesion">¿Seguro desea cerrar sesión?</string>
+    <string name="descripcion_perfil_doctor">Me encanta atender a los niños, soy un excelente médico endocrino especializado desde hace 12 años, graduado en la universidad Peruana Unión.</string>
+</resources>

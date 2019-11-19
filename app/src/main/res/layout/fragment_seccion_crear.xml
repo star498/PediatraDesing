@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".crearcuenta.seccionUno.SeccionCrear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:background="@drawable/color_gradiente"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/tab_text_1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18ssp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/usuario"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColorHint="@color/lyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/border_default"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="Nombres y Apellidos"/>
+
+                <EditText
+                    android:id="@+id/celular"
+                    android:drawableLeft="@drawable/ic_celular"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColorHint="@color/lyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/border_default"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="Celular"/>
+                <EditText
+                    android:id="@+id/email"
+                    android:drawableLeft="@drawable/ic_sms"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColorHint="@color/lyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/border_default"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="Email"/>
+                <EditText
+                    android:id="@+id/pass"
+                    android:drawableLeft="@drawable/ic_key"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColorHint="@color/lyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/border_default"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="Contraseña"/>
+                <EditText
+                    android:id="@+id/pass2"
+                    android:drawableLeft="@drawable/ic_key"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColorHint="@color/lyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/border_default"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="Repetir contraseña"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>
